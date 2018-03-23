@@ -19,6 +19,8 @@ public static void main(String[] args) {
 		// Maximize the window.
 		driver.manage().window().maximize();
 		// Enter UserName
+	         String Title = driver.getTitle();
+		 System.out.println(Title);
 		driver.findElement(By.id("txtEmail")).sendKeys("superhod");
 		// Enter Password
 		driver.findElement(By.id("txtPWD")).sendKeys("school");
